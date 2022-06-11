@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>School Timetable</h1>
+  <table>
+    <colgroup>
+      <col>
+      <col class="mon">
+      <col class="tues">
+      <col class="wed">
+      <col class="thurs">
+      <col class="fri">
+      <col class="sat">
+      <col class="sun">
+    </colgroup>
+    <tr>
+      <th>&nbsp;</th>
+      <td>Mon</td>
+      <td>Tues</td>
+      <td>Wed</td>
+      <td>Thurs</td>
+      <td>Fri</td>
+      <td>Sat</td>
+      <td>Sun</td>
+    </tr>
+    <tr>
+      <th>1st Period</th>
+      <td>English</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>	
+      <td>German</td>
+      <td>Dutch</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>  
+      <th>2nd Period</th>
+      <td>English</td>
+      <td>English</td>
+      <td>&nbsp;</td>
+      <td>German</td>
+      <td>Dutch</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th>3rd Period</th>
+      <td>&nbsp;</td>
+      <td>German</td>
+      <td>&nbsp;</td>
+      <td>German</td>
+      <td>Dutch</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th>4th Period</th>
+      <td>&nbsp;</td>
+      <td>English</td>
+      <td>&nbsp;</td>
+      <td>English</td>
+      <td>Dutch</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+</body>
+<style>
+  * {
+    /* outline: 1px solid red; */
+    font-family: sans-serif;
+  }
+  table{
+    border-collapse: collapse;
+    border: 2px solid gray;
+    
+  }
+  th {
+    font-weight: bold;
+  }
+  td, th {
+    width: 100px;
+    text-align: center;
+    border: 1px solid gray;
+    padding: 10px;
+  }
+  tr:nth-child(1) {
+    font-weight: bold;
+  }
+  
+  .tues, .thurs {
+    background-color: #97DB9A;
+  }
+
+  .fri {
+    background-color: #DCC48E;
+    border: 4px solid #C1437A;
+  }
+
+  .mon, .wed, .sat, .sun {
+    width: 42px;
+  }
+
+</style>
+</html>

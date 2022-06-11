@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <input type="radio" name="asd" id="asd">
+    <label for="asd">asd</label>
+  </div>
+  <div>
+    <input type="radio" name="123" id="123">
+    <label for="123">123</label>
+  </div>
+  <style>
+   input[type="radio"]::before {
+  display: block;
+  content: " ";
+  width: 10px;
+  height: 10px;
+  border-radius: 6px;
+  background-color: red;
+  font-size: 1.2em;
+  transform: translate(0px, 0px) scale(0);
+  transform-origin: center;
+  transition: all 0.3s ease-in;
+}
+
+input[type="radio"]:checked::before {
+  transform: translate(3px, 3px) scale(1);
+  transition: all 0.3s cubic-bezier(0.25, 0.25, 0.56, 2);
+}
+  </style>
+  
+</body>
+</html>

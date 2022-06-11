@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Create function to print string
+        //Everytime you print the string remove a letter of it in the end
+        //After getting only the first letter then add each letter back again
+        function downup(string){
+            console.log(string)
+        }
+
+        function downup2(string){
+            let i;
+            if (i=string.length){
+                for (i = string.length; i>0; i--){
+                    console.log(string.slice(0,i))
+                }
+                
+            }else if (i=0) {
+                for (let i = string.length; i<string.length; i++){
+                    console.log(string.slice(0,i))
+                }
+            }
+            console.log(i)
+        }
+
+        function downup3(string){
+            for (let i = string.length; i>0; i--){
+                console.log(string.slice(0,i))
+            }
+        
+            for (let i = 2; i<=string.length; i++){
+                console.log(string.slice(0,i))
+            }
+        }                
+    </script>
+</body>
+</html>

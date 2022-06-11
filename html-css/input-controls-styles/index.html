@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Input style global normalizer</title>
+</head>
+<body>
+  <style>
+
+/* We've applied some global normalizing CSS to all the controls and their labels, to get them to size in the same way, adopt their parent font, etc., as mentioned in the previous article:
+
+ */
+  button, label, input, select, progress, meter {
+  display: block;
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px;
+  height: 30px;
+}
+
+/* We also added some uniform shadow and rounded corners to the controls on which it made sense:
+
+ */
+ input[type="text"], input[type="datetime-local"], input[type="color"], select {
+  box-shadow: inset 1px 1px 3px #ccc;
+  border-radius: 5px;
+}
+
+  </style>
+  
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="javascript.js" defer></script>
+</head>
+<body>
+
+<div>
+  <label for="username">What's your name?</label>
+  <input type="text"id="username">
+  <button class="greet-btn">Greet Me</button>
+</div>
+
+<h1 class="greeting"></h1>
+
+<script>
+  const name = document.querySelector("#username");
+  const button = document.querySelector('.greet-btn');
+  const greeting = document.querySelector('.greeting');
+
+  button.addEventListener('click', (event)=>{
+    greeting.textContent=`Greetings ${name.value}`;
+  })
+</script>
+
+</body>
+</html>
