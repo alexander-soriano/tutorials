@@ -139,4 +139,12 @@
     </tbody>
   </table>
 </body>
+<script>
+  document.addEventListener('click',()=>{
+    // console.log(typeof(event.target.textContent))
+    console.log('My position in table is: '+event.target.cellIndex+'x'+event.target.parentNode.rowIndex)
+    console.log(event.target.cellIndex)
+    console.log(event.target.parentNode.firstElementChild)
+  });
+</script>
 </html>
